@@ -86,3 +86,16 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type PostType = {
+  id: string;
+  author: Author;
+  content: string;
+  upVoteCount: number;
+  createdAt: string;
+};
+
+export type Author = {
+  name: string;
+  avatarUrl: string;
+};
